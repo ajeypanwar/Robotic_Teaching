@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Robotic Teaching</string>
+    <string name="title_home">Daily Track</string>
+    <string name="title_dashboard">Progress</string>
+    <string name="title_notifications">Quided Path</string>
+    <string name="title_communuty">Communuty</string>
+</resources>

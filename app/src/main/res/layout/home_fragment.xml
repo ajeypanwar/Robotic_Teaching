@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajay.robotic_teaching.HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/fram"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_one1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img_center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/draft" />-->
+                <ImageView
+                    android:id="@+id/img_write"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img_center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/draft" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_degree"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/img_center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/paper" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear">
+
+                <!-- <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_one"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:layout_toLeftOf="@+id/img_center"
+                    android:src="@mipmap/personreading" />-->
+                <ImageView
+                    android:id="@+id/img_reading"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:layout_toLeftOf="@+id/img_center"
+                    android:src="@mipmap/personreading" />
+
+                <!--  <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_center"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/books" />-->
+                <!--app:civ_border_color="#dcd7d7"
+                app:civ_border_width="7dp"-->
+                <ImageView
+                    android:id="@+id/img_center"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/chatcircular" />
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_two"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/img_center"
+                    android:src="@mipmap/verifiedpaper" />-->
+                <ImageView
+                    android:id="@+id/img_complete"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/img_center"
+                    android:src="@mipmap/verifiedpaper" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>
